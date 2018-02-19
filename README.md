@@ -1,5 +1,7 @@
 # Phabricator
 
+**NOTICE:** This repository is a customized fork from `redpointGames/phabricator`. All files, including this `README` file is originally created by [Redpoint Games](https://github.com/RedpointGames).
+
 This is a Docker image which provides a fully configured Phabricator image, including SSH connectivity to repositories, real-time notifications via Web Sockets and all of the other parts that are normally difficult to configure done for you.
 
 You'll need an instance of MySQL for this Docker image to connect to, and for basic setups you can specify it with either the `MYSQL_LINKED_CONTAINER` or `MYSQL_HOST` environment variables, depending on where your instance of MySQL is.
@@ -18,13 +20,12 @@ docker run \
     redpointgames/phabricator
 ```
 
-Alternatively you can launch this image with Docker Compose. Refer to [Using Docker Compose](https://github.com/RedpointGames/phabricator/blob/master/DOCKER-COMPOSE.md) for more information.
+Alternatively you can launch this image with Docker Compose. Refer to [Using Docker Compose](https://github.com/mafesan/phabricator-docker/blob/master/DOCKER-COMPOSE.md) for more information.
 
-**NOTICE:** This repository has been recently moved to `RedpointGames/phabricator` and the Docker image to use is now `redpointgames/phabricator`.  `hachque/phabricator` will be kept in sync with `redpointgames/phabricator` for the foreseeable future, so you don't need to update your configuration immediately.
 
 ## Configuration
 
-For basic configuration in getting the image running, refer to [Basic Configuration](https://github.com/RedpointGames/phabricator/blob/master/BASIC-CONFIG.md).
+For basic configuration in getting the image running, refer to [Basic Configuration](https://github.com/mafesan/phabricator-docker/blob/master/BASIC-CONFIG.md).
 
 For more advanced configuration topics including:
 
@@ -32,7 +33,7 @@ For more advanced configuration topics including:
 * Running custom commands during the boot process, and
 * Baking configuration into your own derived Docker image
 
-refer to [Advanced Configuration](https://github.com/RedpointGames/phabricator/blob/master/ADVANCED-CONFIG.md).
+refer to [Advanced Configuration](https://github.com/mafesan/phabricator-docker/blob/master/ADVANCED-CONFIG.md).
 
 For users that are upgrading to this version and currently using the old `/config` mechanism to configure Phabricator, this configuration mechanism will continue to work, but it's recommended that you migrate to environment variables or baked images when you next get the chance.
 
@@ -44,4 +45,4 @@ For issues encountered while using Phabricator itself, report the issue with rep
 
 ## License
 
-The configuration scripts provided in this image are licensed under the MIT license.  Phabricator itself and all accompanying software are licensed under their respective software licenses.
+The configuration scripts provided in this image are licensed under the MIT license. Phabricator itself and all accompanying software are licensed under their respective software licenses.
