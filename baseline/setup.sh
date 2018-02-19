@@ -51,10 +51,10 @@ echo "wwwgrp-phabricator:!:2000:nginx" >> /etc/group
 mkdir /srv/phabricator
 chown PHABRICATOR:wwwgrp-phabricator /srv/phabricator
 cd /srv/phabricator
-sudo -u PHABRICATOR git clone https://www.github.com/phacility/libphutil.git /srv/phabricator/libphutil
-sudo -u PHABRICATOR git clone https://www.github.com/phacility/arcanist.git /srv/phabricator/arcanist
-sudo -u PHABRICATOR git clone https://www.github.com/phacility/phabricator.git /srv/phabricator/phabricator
-sudo -u PHABRICATOR git clone https://www.github.com/PHPOffice/PHPExcel.git /srv/phabricator/PHPExcel
+sudo -u PHABRICATOR git clone https://www.github.com/mafesan/libphutil.git /srv/phabricator/libphutil
+sudo -u PHABRICATOR git clone https://www.github.com/mafesan/arcanist.git /srv/phabricator/arcanist
+sudo -u PHABRICATOR git clone https://www.github.com/mafesan/phabricator.git /srv/phabricator/phabricator
+sudo -u PHABRICATOR git clone https://www.github.com/mafesan/PHPExcel.git /srv/phabricator/PHPExcel
 cd /
 
 # Clone Let's Encrypt
